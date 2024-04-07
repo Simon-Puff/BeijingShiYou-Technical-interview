@@ -21,6 +21,8 @@ def combine_substrings (source, target):
         # If not found, which means in source, there is no such character that
         # can form a sub string without affecting the original order
         if index != -1:
+            if index == 0:
+                index += 1
             source_copy = source_copy[index:]
             index_iterator += 1
         else:
